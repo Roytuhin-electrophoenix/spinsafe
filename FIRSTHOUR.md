@@ -3,3 +3,4 @@
 - The display has a heading "SpinSafe" on top of the OLED Display. Below that the message is shown. 
 - Relevant Libraries (Adafruit_GFX, Adafruit SSD1306) are installed in Arduino IDE for proper compilation
 - https://github.com/Roytuhin-electrophoenix/spinsafe/blob/main/src/displaytest.cpp here is the test program
+- Extension PlatformIO is used so that the warnings due to unsupported libraries are diminished. 
