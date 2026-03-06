@@ -2,6 +2,6 @@
 - The Program Showcases 4 states (Fire, Healthy, Imbalance & Friction) consecutively with a 2 second delay between each of them
 - The display has a heading "SpinSafe" on top of the OLED Display. Below that the message is shown. 
 - Relevant Libraries (Adafruit_GFX, Adafruit SSD1306) are installed in Arduino IDE for proper compilation
-- https://github.com/Roytuhin-electrophoenix/spinsafe/blob/main/src/displaytest.cpp here is the test program
+- (https://github.com/Roytuhin-electrophoenix/spinsafe/blob/main/src/displaytest.cpp) [here is the test program]
 - Extension PlatformIO is used so that the warnings due to unsupported libraries are diminished. 
 - [Output Images & Videos can be seen here](https://drive.google.com/drive/folders/1-0Kmswv7kvG7GXbqrAgybEjc-b1eq_L2?usp=drive_link)
