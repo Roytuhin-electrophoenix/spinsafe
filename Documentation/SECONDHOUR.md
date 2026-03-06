@@ -1,0 +1,12 @@
+- Testing of Gyro-Accelarometer MPU6050 is done using a test program. 
+- In the program, the vibration along x,y & z axis is collected & shown through serial monitor & serial plotter
+- Initially the program faced issue as we had suspected although it was sold as MPU6050, the inner silicon chip isn't the original MPU6050. That became true when the ping test program shown the I2C address at 0x68 but when tried to interact with it through test program it shown the MPU6050 failed.
+- The Solution was a brute-force access to the MPU6050's power management register (0x6B). The sleep mode was turned off by putting 0 manually to ensure the chip switches on. The ID might be different but the register address remains the same.
+- At Register address 0x3B the Accelarometer_X data starts to store. So Sensor's internal pointer put up there first.
+- Each axis data is stored in 16 bit (2 Byte) format. There are 3 axes (x,y,z) & all three axis data is stored consecutively. 
+- So from 0x3B we bring up 6 bytes of data directly 
+- Now to show exact vibration data into 2 byte format, we bring first 1 byte data, shift left it 8 times (eight 0 added towards LSB) & then next 1 byte is added with it in Bitwise OR.
+- That way now we have 16 bit data stiched from two 8 bit data. 
+- The configured sensitivity of this sensor is +2G to -2G. A 16 bit binary integer can hold a number between +32767 to -32768. So in 1G (normal gravity) condition the data output should be 16384. 
+- So the sensor data output is divided by the same number (16384) to show it in a readable & usable format (on scale of G - default gravity)
+- 
