@@ -32,23 +32,19 @@ void drawScreen(String status) {
   display.clearDisplay();
   display.setTextColor(WHITE);
   
-  // Top Box for "SpinSafe" branding
   display.drawRect(0, 0, 128, 22, WHITE); 
   display.setTextSize(2);
   // (128 total pixels - 96 pixels for "SpinSafe") / 2 = 16 pixel margin
   display.setCursor(16, 4); 
   display.print("SpinSafe");
 
-  // Bottom Box for the AI Status
   display.drawRect(0, 26, 128, 38, WHITE); 
   display.setTextSize(2);
   
-  // Auto-center the status text based on how long the word is
-  int charWidth = 12; // Width of size 2 text characters
+  int charWidth = 12; 
   int textWidth = status.length() * charWidth;
   int cursorX = (128 - textWidth) / 2;
   
-  // Prevent clipping if a word is slightly too long
   if (cursorX < 0) cursorX = 2; 
 
   display.setCursor(cursorX, 38); 
