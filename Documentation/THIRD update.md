@@ -4,5 +4,5 @@
 - the propeller is attached with the shaft temporarily with tape 
 - the water proof DSB tempareture sensor is attached with RS775 motor to ternsmitt the tempareture data immediatly to the sensor 
 
-- [click here for the relevant explaination and the visuals] (https://drive.google.com/drive/folders/1mzTmLgzWCjLWPYvNImqHVX4HpbbVb5e_)
+- [click here for the relevant explaination and the visuals](https://drive.google.com/drive/folders/1mzTmLgzWCjLWPYvNImqHVX4HpbbVb5e_)
 
