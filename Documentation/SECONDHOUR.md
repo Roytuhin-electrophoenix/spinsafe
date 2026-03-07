@@ -9,4 +9,5 @@
 - That way now we have 16 bit data stiched from two 8 bit data. 
 - The configured sensitivity of this sensor is +2G to -2G. A 16 bit binary integer can hold a number between +32767 to -32768. So in 1G (normal gravity) condition the data output should be 16384. 
 - So the sensor data output is divided by the same number (16384) to show it in a readable & usable format (on scale of G - default gravity)
-- 
+- [Click here to see the code](https://github.com/Roytuhin-electrophoenix/spinsafe/blob/main/src/mpu6050test.cpp)
+- [Click here to see the photo & video demonstration](https://drive.google.com/drive/folders/1PlaTCQy_B0dpYZwy1MIzsfihLtvwAfbD?usp=drive_link)
