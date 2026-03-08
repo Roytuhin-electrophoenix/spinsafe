@@ -8,4 +8,5 @@
 - as current sensor operates on 5V can give maximum output of 5V , we have connected 2.2k ohm and 4.7k ohm to voltage devider and supplied it onto D35 to prevent burnout
 
 [click here for the explaination and visuals](https://drive.google.com/file/d/18916JHazj0STRI2PTP5eSdhqKy88zdYf/view?usp=drive_link)
+
 [Click here for total codebase](https://github.com/Roytuhin-electrophoenix/spinsafe/commit/1dd11c245857ff41dc0e1c85cdbc4ed52c4da0d1)
